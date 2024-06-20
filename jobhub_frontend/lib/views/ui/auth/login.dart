@@ -9,6 +9,7 @@ import 'package:jobhub/views/common/custom_textfield.dart';
 import 'package:jobhub/views/common/exports.dart';
 import 'package:jobhub/views/common/height_spacer.dart';
 import 'package:jobhub/views/ui/auth/signup.dart';
+import 'package:jobhub/views/ui/mainscreen.dart';
 import 'package:provider/provider.dart';
 
 class LoginPage extends StatefulWidget {
@@ -121,7 +122,9 @@ class _LoginPageState extends State<LoginPage> {
 
               /// Login Button
               CustomButton(
-                onTap: () {},
+                onTap: () {
+                  Get.to(() => const MainScreen());
+                },
                 text: "Login",
               )
             ],
